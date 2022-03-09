@@ -8,6 +8,7 @@
 </form>
 
 <?php
+if(isset($_POST['nim']) and !empty($_POST['nim'])) {    
   include('connection.php');
   $sql = "insert into mahasiswa(nim, nama, kelas) values('" .
       $_POST['nim'] . "','" . $_POST['nama'] . "','" . $_POST['kelas'] . "')";
@@ -16,4 +17,5 @@
   if($result == 1) {
       header('Location: index.php');
   }
+}
 ?>
