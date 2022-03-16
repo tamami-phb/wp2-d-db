@@ -1,6 +1,8 @@
 <?php
-$conn_string = "host=172.17.0.2 port=5432 dbname=wp2_d " .
-  "user=postgres password=secret";
+$conn_string = "host=john.db.elephantsql.com " . 
+  "port=5432 dbname=bbabwdoj " .
+  "user=bbabwdoj " . 
+  "password=ymZ9MmRIoXZ_YS8YThBXkn11Zc-e56h5";
 $conn = pg_connect($conn_string);
 
 if($conn) {
